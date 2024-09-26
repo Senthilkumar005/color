@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  Background: linear-gradient(45deg, rgba(255, 94, 77, 0.8), rgba(255, 183, 77, 0.8))
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"]{
+  margin-top: 0.5rem;
+  padding: 0.23rem;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.23rem;
+  outline: none;
+}
+.sqare{
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+  display: grid;
+  place-content: center;
+}
+.sqare p{
+  text-align: center;
+}
+form {
+  width: 300px;
+}
+.la{
+  position: absolute;
+  left: -999999px;
+}
+.center-button {
+  display: block;         /* Make the button a block element */
+  margin: 12px auto;        /* Center horizontally */
+  padding: 10px 20px;    /* Optional: Add some padding */
+  font-size: 16px;     
+  
+}
+button:hover{
+  background: linear-gradient(45deg, rgba(200, 50, 50, 0.9), rgba(255, 150, 50, 0.9)); 
+  cursor: pointer;
+}
+.h1{
+  text-align: center;
+  margin-bottom: 10px;
 }
